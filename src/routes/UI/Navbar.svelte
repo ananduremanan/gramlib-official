@@ -20,7 +20,9 @@
   </div>
   <div class="flex items-center gap-6">
     <ul class="flex text-base gap-6 max-sm:hidden">
-      <li class="hover:text-orange-600 cursor-pointer">Documentation</li>
+      <a href="https://gbs-svelte-bblock.netlify.app/"
+        ><li class="hover:text-orange-600 cursor-pointer">Documentation</li></a
+      >
       <li class="hover:text-orange-600 cursor-pointer">Components</li>
     </ul>
     <DarkMode btnClass="dark:text-white" />

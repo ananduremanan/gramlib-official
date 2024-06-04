@@ -17,9 +17,11 @@
     </h1>
     <p class="lg:text-xl">A Svelte Component Library for faster development</p>
     <div class="flex gap-2">
-      <button
-        class="bg-orange-600 text-white px-2 py-1 rounded-lg lg:text-xl hover:bg-orange-500"
-        >Get Started</button
+      <a href="https://gbs-svelte-bblock.netlify.app/"
+        ><button
+          class="bg-orange-600 text-white px-2 py-1 rounded-lg lg:text-xl hover:bg-orange-500"
+          >Get Started</button
+        ></a
       ><a
         href="https://www.figma.com/design/3oWVbY7t79mavZh1qQD4ym/Gramlib?node-id=0-1&t=EXs4oXYj8MxIvwKw-1"
         ><button class="border text-orange-600 px-2 py-1 rounded-lg lg:text-xl"
