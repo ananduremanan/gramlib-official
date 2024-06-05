@@ -110,7 +110,7 @@
       <a href="https://gbs-svelte-bblock.netlify.app/"
         ><button
           class="bg-orange-600 text-white px-2 py-1 rounded-lg lg:text-xl hover:bg-orange-500 h-full"
-          >Get Started</button
+          >Read Documentation</button
         ></a
       >
     </div>
