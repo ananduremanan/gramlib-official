@@ -33,10 +33,19 @@
   <div
     class="top-0 left-0 px-10 py-4 bg-gray-100 min-h-screen w-[70vw] fixed dark:bg-gray-700 slide-in z-50"
   >
-    <div class="flex justify-between items-center">
-      <span>Home</span>
-      <button on:click={toggleMenu}><X /></button>
-    </div>
+    <ul class="flex flex-col gap-2 text-black">
+      <li>
+        <div class="flex justify-between items-center">
+          <span><a href="/">Home</a></span>
+          <button on:click={toggleMenu}><X /></button>
+        </div>
+      </li>
+      <li>
+        <a href="https://gbs-svelte-bblock.netlify.app">Documentation</a>
+      </li>
+      <li>Components</li>
+      <li>Github</li>
+    </ul>
   </div>
 {/if}
 

@@ -1,5 +1,5 @@
 <section
-  class="px-5 py-4 min-h-screen lg:px-20 lg:grid lg:grid-cols-2 hero bg-hero-light bg-center bg-cover bg-no-repeat bg-fixed dark:bg-hero-dark max-sm:bg-left"
+  class="px-5 py-4 min-h-screen lg:px-20 lg:grid lg:grid-cols-2 hero md:bg-hero-light bg-center bg-cover bg-no-repeat bg-fixed md:dark:bg-hero-dark max-sm:bg-left max-sm:bg-white max-sm:dark:bg-black"
 >
   <div class="flex flex-col items-left gap-4 lg:gap-6">
     <div class="relative w-full h-40">
@@ -52,7 +52,7 @@
       Basic Styles
     </div>
     <p class="mt-4">
-      a headless UI library designed for developers who seek a minimalist
+      A headless UI library designed for developers who seek a minimalist
       approach to building user interfaces. Unlike traditional UI libraries that
       come with extensive default styles and components, Gramlib focuses on
       providing unstyled, highly customizable components.
