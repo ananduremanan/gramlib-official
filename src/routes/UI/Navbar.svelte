@@ -62,11 +62,4 @@
   .slide-in {
     animation: slideIn 0.3s forwards;
   }
-
-  .glass {
-    background: rgba(255, 255, 255, 0.24);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-  }
 </style>

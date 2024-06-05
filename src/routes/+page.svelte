@@ -1,3 +1,30 @@
+<script lang="ts">
+  import { ClipboardCleanOutline } from "flowbite-svelte-icons";
+  import { onMount } from "svelte";
+
+  let isCopied: boolean = false;
+
+  async function copyToClipboard(text: string) {
+    try {
+      await navigator.clipboard.writeText(text);
+      isCopied = true;
+      setTimeout(() => {
+        isCopied = false;
+      }, 2000);
+    } catch (err) {
+      console.error("Error in copying text: ", err);
+    }
+  }
+
+  function resetIsCopied() {
+    setTimeout(() => {
+      isCopied = false;
+    }, 2000);
+  }
+
+  onMount(resetIsCopied);
+</script>
+
 <section
   class="px-5 py-4 min-h-screen lg:px-20 lg:grid lg:grid-cols-2 hero md:bg-hero-light bg-center bg-cover bg-no-repeat bg-fixed md:dark:bg-hero-dark max-sm:bg-left max-sm:bg-white max-sm:dark:bg-black"
 >
@@ -65,4 +92,31 @@
   <div class="flex items-center justify-center">
     <img src="/user-interface.png" alt="" />
   </div>
+</section>
+
+<section class="h-auto px-5 py-14 bg-white text-black lg:px-20 flex flex-col">
+  <div class="text-4xl font-bold lg:text-6xl">
+    Get <span class="text-orange-600">Started</span>
+  </div>
+
+  <div class="flex max-sm:flex-col items-left mt-4 gap-2">
+    <button
+      class="p-4 bg-gray-100 rounded-lg flex justify-between"
+      on:click={() => copyToClipboard("npm i @grampro/svelte-block")}
+    >
+      <code>npm i @grampro/svelte-block</code><ClipboardCleanOutline />
+    </button>
+    <div>
+      <a href="https://gbs-svelte-bblock.netlify.app/"
+        ><button
+          class="bg-orange-600 text-white px-2 py-1 rounded-lg lg:text-xl hover:bg-orange-500 h-full"
+          >Get Started</button
+        ></a
+      >
+    </div>
+  </div>
+
+  {#if isCopied}
+    <p class="text-green-500">Text copied to clipboard</p>
+  {/if}
 </section>
