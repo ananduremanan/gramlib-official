@@ -33,7 +33,7 @@
   <div
     class="top-0 left-0 px-10 py-4 bg-gray-100 min-h-screen w-[70vw] fixed dark:bg-gray-700 slide-in z-50"
   >
-    <ul class="flex flex-col gap-2 text-black">
+    <ul class="flex flex-col gap-2 text-black dark:text-white">
       <li>
         <div class="flex justify-between items-center">
           <span><a href="/">Home</a></span>
