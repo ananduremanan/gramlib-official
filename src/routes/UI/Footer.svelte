@@ -7,9 +7,17 @@
       and tailwind.
     </p>
     <ul class="flex flex-col gap-2 mt-4">
-      <li>About</li>
-      <li>Source Code</li>
-      <li>Report Bug</li>
+      <li>
+        <a href="https://gramproindia.com/" class="hover:text-orange-500"
+          >About US</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://github.com/ananduremanan/svelte-component-library"
+          class="hover:text-orange-500">Report Bug</a
+        >
+      </li>
     </ul>
   </div>
   <div>
@@ -19,6 +27,7 @@
         href="https://www.npmjs.com/package/@grampro/svelte-block"
         target="_blank"
         aria-label="click to visit npm profile"
+        class="hover:text-orange-500"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -37,6 +46,7 @@
         href="https://github.com/ananduremanan/svelte-component-library"
         target="_blank"
         aria-label="click to visit github profile"
+        class="hover:text-orange-500"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
           width="1.5em"
